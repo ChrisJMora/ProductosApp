@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProductosApp.ProductoPage"
+             Title="ProductoPage">
+    
+    <VerticalStackLayout
+        Spacing="10"
+        Padding="20,20"
+        BackgroundColor="DarkBlue"
+        >
+
+        <HorizontalStackLayout
+            BackgroundColor="White"
+            Padding="10"
+            HorizontalOptions="Fill"
+            >
+
+            <Image
+                Source="amumu_poro.png"
+                HeightRequest="70"
+                />
+
+            <Label
+                Text="productos"
+                FontFamily="28DaysLater"
+                FontSize="40"
+                TextColor="BlueViolet"
+                VerticalTextAlignment="Center"
+                />
+            
+        </HorizontalStackLayout>
+
+        <Button
+            Text="Nuevo Producto"
+            FontFamily="28DaysLater"
+            FontSize="20"
+            HorizontalOptions="Fill"
+            Clicked="onClicNuevoProducto"
+            />
+
+
+        <!--ItemSelected="a"-->
+        <ListView
+            x:Name="ListaProductos"
+            RowHeight="80"
+            BackgroundColor="White"
+            >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10">
+                            <Image
+                                Source="amumu_poro.png"
+                                HeightRequest="70"
+                                />
+                            <StackLayout Orientation="Vertical" Padding="10">
+                                <Label
+                                    Text="{Binding Nombre}" 
+                                    TextColor="DarkBlue"
+                                    FontFamily="28DaysLater"
+                                    FontSize="20"
+                                    VerticalOptions="FillAndExpand"
+                                />
+                                <Label
+                                    Text="{Binding Cantidad}" 
+                                    TextColor="DarkBlue"
+                                    FontFamily="Skomelr"
+                                    VerticalOptions="Start"
+                                />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+        </ListView>
+        
+    </VerticalStackLayout>
+</ContentPage>

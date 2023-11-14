@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProductosApp.NuevoProductoPage"
+             Title="NuevoProductoPage">
+    <VerticalStackLayout
+    Spacing="10"
+    Padding="20,20"
+    BackgroundColor="DarkBlue"
+    >
+
+        <HorizontalStackLayout
+        BackgroundColor="White"
+        Padding="10"
+        HorizontalOptions="Fill"
+        >
+
+            <Image
+            Source="amumu_poro.png"
+            HeightRequest="70"
+            />
+
+            <Label
+            Text="nuevo producto"
+            FontFamily="28DaysLater"
+            FontSize="25"
+            TextColor="BlueViolet"
+            VerticalTextAlignment="Center"
+            />
+
+        </HorizontalStackLayout>
+        
+        
+        
+        
+        
+        <TableView BackgroundColor="AliceBlue">
+            <TableRoot>
+                <TableSection Title="Llene los siguientes campos:">
+                    <EntryCell
+                        x:Name="Nombre"
+                        Label="Nombre: "
+                        LabelColor="DarkBlue"
+                        Placeholder="Nombre"
+                        >
+                    </EntryCell>
+                    <EntryCell
+                        x:Name="Descripcion"
+                        Label="Descripción: "
+                        LabelColor="DarkBlue"
+                        Placeholder="Descripción"
+                        >
+                    </EntryCell>
+                    <EntryCell
+                        x:Name="Cantidad"
+                        Placeholder="Cantidad"
+                        Label="Cantidad: "
+                        LabelColor="DarkBlue"
+                        >
+                    </EntryCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+        <Button
+            Text="Guardar Producto"
+            FontFamily="28DaysLater"
+            FontSize="20"
+            HorizontalOptions="Fill"
+            Clicked="onClic_GuardarProducto"
+        />
+
+    </VerticalStackLayout>
+</ContentPage>

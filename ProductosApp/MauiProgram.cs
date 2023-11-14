@@ -13,6 +13,8 @@ namespace ProductosApp
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("28DaysLater.ttf", "28DaysLater");
+                    fonts.AddFont("Skomelr-Quantum", "Skomelr");
                 });
 
 #if DEBUG

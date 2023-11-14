@@ -10,30 +10,52 @@
             VerticalOptions="Center">
 
             <Image
-                Source="dotnet_bot.png"
+                Source="amumu_poro.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
-                HorizontalOptions="Center" />
-
+                HorizontalOptions="Center" 
+                RotationX="-10"
+                />
+            
             <Label
-                Text="Hello, World!"
+                Text="Programacion IV"
                 SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+                FontSize="40"
+                TextColor="red"
+                HorizontalOptions="Center" 
+                FontFamily="28DaysLater"
+                RotationX="30"
+                />
 
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
+                Text="---Aplicación---"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="18"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                BackgroundColor="Blue"
+                Padding="15"
+                FontFamily="Skomelr"
+                RotationX="-30"
+                />
 
             <Button
                 x:Name="CounterBtn"
-                Text="Click me"
+                Text="Clickeame"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" 
+                RotationY="30"
+                />
+
+            <Label
+                Text="(～﹃～)~zZ"
+                FontSize="25"
+                TextColor="black"
+                Padding="15"
+                HorizontalOptions="Center"
+                BackgroundColor="Yellow"
+                />
 
         </VerticalStackLayout>
     </ScrollView>
